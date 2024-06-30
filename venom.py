@@ -40,9 +40,9 @@ async def main():
             restart_count = 0
             last_restart_time = time.time()
 
-        logging.info("Starting the bot...")
+        logging.info("beast mode on")
         process = start_bot()
-        await notify_admin("🚀 Bot is starting...")
+        await notify_admin("🚀 beast mode on")
 
         while process.poll() is None:
             await asyncio.sleep(5)
